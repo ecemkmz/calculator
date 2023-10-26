@@ -3,5 +3,4 @@ description: Basit Hesap Makinesi Uygulaması
 version: 1.0.0
 
 environment:
-  sdk: ">=2.12.0 <4.0.0" # Örnek bir SDK kısıtlaması
-
+  sdk: ">=2.12.0 <4.0.0"
