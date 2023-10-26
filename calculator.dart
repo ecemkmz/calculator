@@ -3,7 +3,7 @@ import 'dart:io';
 void main() {
   while (true) {
     print('İşlem tipini seçiniz:');
-    print('1- addition');
+    print('1- Toplama');
     print('2- Çıkarma');
     print('3- Çarpma');
     print('4- Bölme');
@@ -37,23 +37,23 @@ void main() {
       }
     }
 
-    double sonuc = 0.0;
+    double result = 0.0;
 
     if (choice == '1') {
-      sonuc = addition(number1, number2);
+      result = addition(number1, number2);
     } else if (choice == '2') {
-      sonuc = subtraction(number1, number2);
+      result = subtraction(number1, number2);
     } else if (choice == '3') {
-      sonuc = multiplication(number1, number2, number3);
+      result = multiplication(number1, number2, number3);
     } else if (choice == '4') {
       if (number2 == 0) {
         print('Sıfıra bölemezsiniz. İşlem iptal edildi.');
         continue;
       }
-      sonuc = division(number1, number2: number2);
+      result = division(number1, number2: number2);
     }
 
-    print('Sonuç: $sonuc');
+    print('Sonuç: $result');
   }
 }
 
